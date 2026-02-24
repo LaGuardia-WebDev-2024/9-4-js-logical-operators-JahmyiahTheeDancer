@@ -6,17 +6,27 @@ draw = function() {
     background(255,255,255,150);
     strokeWeight(2);
     stroke(0);
-    fill(0, 255, 68); 
-    rect(0, 0, 400, 200);  
+    fill(189, 255, 253); 
+     rect(0, 0, 400, 200);
+    
 
-    fill(0, 0, 0);
-    textSize(30);
-    text("Press me!", 145, 115);
-
-    if(mousePressed){
-        labelCanvas();
+   
+    if(mousePressed  && mouseY < 200){
+        fill(180, 214, 213);
+        textSize(30);
+         rect(0, 0, 400, 200);
+         fill(0,0,0)
+    text("BOO!", 145, 115);
+     
     }
+
+
+
+
+
+
 };
+
 
 var labelCanvas = function(){
     fill(150)
